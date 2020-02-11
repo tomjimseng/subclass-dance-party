@@ -47,7 +47,7 @@ $('.lineUpButton').on('click', function(event) {
       left: $("body").width() * 0.7
     };
 
-    function animatedLineup (arr, css) {
+    function animatedLineup(arr, css) {
       arr.forEach(dancer => {
         css.top += 50;
         $(dancer.$node).animate(css);
@@ -63,6 +63,5 @@ function delegateEvent() {
     event.stopImmediatePropagation();
   });
 }
-
 
 });
